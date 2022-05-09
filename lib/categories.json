@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Hjem",
+    "url": "/"
+  },
+  {
+    "name": "Shop",
+    "url": "/shop",
+    "items": [
+      {
+        "name": "Pakker",
+        "url": "/shop/pakker",
+        "items": [
+          {
+            "name": "Bh",
+            "url": "/shop/pakker/bh"
+          },
+          {
+            "name": "Bh og trusse",
+            "url": "/shop/pakker/bh-trusse"
+          },
+          {
+            "name": "Trusse",
+            "url": "/shop/pakker/trusse"
+          }
+        ]
+      },
+      {
+        "name": "Stof",
+        "url": "/shop/stof",
+        "items": [
+          {
+            "name": "Jersey",
+            "url": "/shop/stof/jersey"
+          },
+          {
+            "name": "Lycra",
+            "url": "/shop/stof/lycra"
+          },
+          {
+            "name": "Microfiber",
+            "url": "/shop/stof/microfiber"
+          },
+          {
+            "name": "Simplex",
+            "url": "/shop/stof/simplex"
+          }
+        ]
+      },
+      {
+        "name": "Blonder",
+        "url": "/shop/stof",
+        "items": [
+          {
+            "name": "Brede blonder",
+            "url": "/shop/blonde/brede-blonder"
+          },
+          {
+            "name": "Smalle blonde",
+            "url": "/shop/blonde/smalle-blonder"
+          }
+        ]
+      },
+      {
+        "name": "Elastik",
+        "url": "/shop/stof",
+        "items": [
+          {
+            "name": "Jersey",
+            "url": "/shop/stof/jersey"
+          }
+        ]
+      },
+      {
+        "name": "Tilbehør",
+        "url": "/shop/stof",
+        "items": [
+          {
+            "name": "Lukkere",
+            "url": "/shop/tilbehor/lukkere"
+          },
+          {
+            "name": "Ottetaller",
+            "url": "/shop/tilbehor/ottetaller"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Om os",
+    "url": "/om"
+  },
+  {
+    "name": "Kurser",
+    "url": "/kurser"
+  }
+]

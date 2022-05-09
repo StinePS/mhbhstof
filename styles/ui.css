@@ -1,0 +1,9 @@
+@layer components {
+  /* Buttons */
+  .btn {
+    @apply inline-block rounded-full px-4 py-2 m-2 text-center text-base font-semibold bg-teal-500 text-white hover:bg-teal-700;
+  }
+  .chevron {
+    @apply w-5 h-5 ml-2 -mr-1 text-slate-900;
+  }
+}
