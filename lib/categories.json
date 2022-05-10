@@ -12,6 +12,10 @@
         "url": "/shop/pakker",
         "items": [
           {
+            "name": "Alle pakker",
+            "url": "/shop/pakker/"
+          },
+          {
             "name": "Bh",
             "url": "/shop/pakker/bh"
           },
@@ -30,6 +34,14 @@
         "url": "/shop/stof",
         "items": [
           {
+            "name": "Alt stof",
+            "url": "/shop/stof/"
+          },
+          {
+            "name": "Blondestof",
+            "url": "/shop/stof/blondestof"
+          },
+          {
             "name": "Jersey",
             "url": "/shop/stof/jersey"
           },
@@ -44,44 +56,76 @@
           {
             "name": "Simplex",
             "url": "/shop/stof/simplex"
+          },
+          {
+            "name": "Stræksatin",
+            "url": "/shop/stof/simplex"
           }
         ]
       },
       {
         "name": "Blonder",
-        "url": "/shop/stof",
+        "url": "/shop/blonder",
         "items": [
           {
+            "name": "Alle blonder",
+            "url": "/shop/blonder/"
+          },
+          {
             "name": "Brede blonder",
-            "url": "/shop/blonde/brede-blonder"
+            "url": "/shop/blonder/brede-blonder"
           },
           {
             "name": "Smalle blonde",
-            "url": "/shop/blonde/smalle-blonder"
+            "url": "/shop/blonder/smalle-blonder"
           }
         ]
       },
       {
         "name": "Elastik",
-        "url": "/shop/stof",
+        "url": "/shop/elastik",
         "items": [
           {
-            "name": "Jersey",
-            "url": "/shop/stof/jersey"
+            "name": "Al elastik",
+            "url": "/shop/elastik/"
+          },
+          {
+            "name": "Foldeelastik",
+            "url": "/shop/elastik/foldeelastik"
+          },
+          {
+            "name": "Taljeelastik",
+            "url": "/shop/elastik/taljeelastik"
           }
         ]
       },
       {
         "name": "Tilbehør",
-        "url": "/shop/stof",
+        "url": "/shop/tilbehor",
         "items": [
           {
-            "name": "Lukkere",
-            "url": "/shop/tilbehor/lukkere"
+            "name": "Bh-luk",
+            "url": "/shop/tilbehor/bh-luk"
           },
           {
             "name": "Ottetaller",
             "url": "/shop/tilbehor/ottetaller"
+          },
+          {
+            "name": "Powernet",
+            "url": "/shop/tilbehor/powernet"
+          },
+          {
+            "name": "Ringe",
+            "url": "/shop/tilbehor/ringe"
+          },
+          {
+            "name": "Stropper",
+            "url": "/shop/tilbehor/stropper"
+          },
+          {
+            "name": "Tyl",
+            "url": "/shop/tilbehor/tyl"
           }
         ]
       }

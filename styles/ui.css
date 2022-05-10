@@ -1,9 +1,13 @@
 @layer components {
   /* Buttons */
   .btn {
-    @apply inline-block rounded-full px-4 py-2 m-2 text-center text-base font-semibold bg-teal-500 text-white hover:bg-teal-700;
+    @apply m-2 inline-block rounded-full bg-teal-500 px-4 py-2 text-center text-base font-semibold text-white no-underline hover:bg-teal-700 hover:text-white;
   }
   .chevron {
-    @apply w-5 h-5 ml-2 -mr-1 text-slate-900;
+    @apply ml-2 -mr-1 h-5 w-5 text-slate-900;
+  }
+
+  .navlink {
+    @apply text-sm font-medium text-gray-900 no-underline;
   }
 }

@@ -8,33 +8,39 @@ type Props = {
   menuItems: MenuItem[];
 };
 
+// Change between the primary and secondary menu in mobile size
 export default function ChangeMenu({ menuItems }: Props) {
   const [activeMenu, setActiveMenu] = useState<MenuItem | undefined>(undefined);
   return (
+    // If there is an activeMenu then render the MenuList, otherwise map over the menuItems, making them a button or link depending if they've got items under them or not
     <>
       {activeMenu ? (
-        <MenuList menuItem={activeMenu} />
+        <MenuList
+          menuItem={activeMenu}
+          handleGoBack={() => setActiveMenu(undefined)}
+        />
       ) : (
-        <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+        <div className="overflow-hidden rounded-lg shadow-lg">
           <div className="relative bg-teal-50 p-4">
-            {menuItems.map((menuItem) => (
-              <Link key={menuItem.name} href={menuItem.url}>
-                <a
-                  className="flex justify-between rounded-lg p-2 transition duration-150 
-                ease-in-out hover:bg-gray-100 focus-visible:ring"
-                  onClick={(event) => {
-                    if (menuItem.items) {
-                      event.stopPropagation();
-                      event.preventDefault();
-                      setActiveMenu(menuItem);
-                    }
-                  }}
+            {menuItems.map((menuItem) =>
+              menuItem.items ? (
+                <button
+                  key={menuItem.name}
+                  onClick={() => setActiveMenu(menuItem)}
+                  className="flex w-full justify-between py-2 transition duration-150 ease-in-out"
                 >
-                  <span className="text-sm font-medium text-gray-900">{menuItem.name}</span>
+                  <span className="navlink">{menuItem.name}</span>
                   <ChevronRightIcon className={"chevron"} />
-                </a>
-              </Link>
-            ))}
+                </button>
+              ) : (
+                <Link key={menuItem.name} href={menuItem.url}>
+                  <a className="flex justify-between py-2 no-underline">
+                    <span className="navlink">{menuItem.name}</span>
+                    <ChevronRightIcon className={"chevron"} />
+                  </a>
+                </Link>
+              )
+            )}
           </div>
         </div>
       )}
