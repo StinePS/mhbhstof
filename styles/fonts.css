@@ -1,6 +1,14 @@
-@font-face {
-  font-family: "Source Sans Pro";
-  src: url("/fonts/SourceSansPro-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+@layer base {
+  html {
+    font-family: Inter, system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .pageheader {
+    @apply mt-8 mb-4 text-center font-heebo text-3xl font-bold lg:text-4xl;
+  }
+  .sectionheader {
+    @apply mb-4 text-2xl font-semibold;
+  }
 }

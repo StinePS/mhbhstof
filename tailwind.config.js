@@ -1,6 +1,17 @@
 module.exports = {
-  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
+    colors: {
+      black: "#0d0d0d",
+      darkpurple: "#730255",
+      green: "#418200",
+      orange: "#F8F0E7",
+      purple: "#8c0368",
+      white: "#fbfbfb",
+    },
     container: {
       center: true,
       padding: {
@@ -10,6 +21,12 @@ module.exports = {
         xl: "5rem",
         "2xl": "6rem",
       },
+    },
+    fontFamily: {
+      great: ["Great Vibes", "cursive"],
+      heebo: ["Heebo", "sans-serif"],
+      inter: ["Inter", "sans-serif"],
+      paris: ["Parisienne", "cursive"],
     },
     extend: {},
     screens: {

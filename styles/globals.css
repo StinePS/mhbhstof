@@ -11,32 +11,58 @@
   box-sizing: border-box;
 }
 
+/* Padding-top "makes room" for sticky header */
 body {
-  @apply bg-teal-50;
   overflow-y: scroll;
+  background-color: #fbfbfb;
+  padding-top: 80px;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-top: 112px;
+  }
 }
 
 main {
   margin-bottom: 2rem;
 }
 
-h1 {
-  font-size: 2rem;
-  text-align: center;
-  margin: 1rem 0;
+p + p {
+  margin-top: 1rem;
 }
 
-h2 {
-  font-size: 1.5rem;
-  margin: 1rem 0;
+/* FORM */
+/* Warning message */
+.hint {
+  font-size: 0.8rem;
+  visibility: hidden;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  visibility: hidden;
 }
 
-/* Anchortags in text */
-a {
-  text-decoration: underline;
-  color: hotpink;
+input:invalid:not(:focus):not(:placeholder-shown) + .hint {
+  visibility: visible;
 }
 
-a:hover {
-  color: darkblue;
+input:invalid:not(:focus):not(:placeholder-shown) {
+  outline: 2px solid red;
+}
+
+/* Styling of inputs and labels */
+input,
+textarea {
+  background-color: #fbfbfb;
+  color: #0d0d0d;
+  font-size: 1rem;
+  border: 1px solid #0d0d0d;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+label {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
 }

@@ -1,13 +1,15 @@
 @layer components {
   /* Buttons */
   .btn {
-    @apply m-2 inline-block rounded-full bg-teal-500 px-4 py-2 text-center text-base font-semibold text-white no-underline hover:bg-teal-700 hover:text-white;
+    @apply m-2 mx-auto flex max-w-max items-center rounded-xl border-2 border-green bg-green px-4 py-2 text-center text-xl font-semibold text-white no-underline hover:bg-white hover:text-green;
   }
+  /* Chevrons */
   .chevron {
-    @apply ml-2 -mr-1 h-5 w-5 text-slate-900;
+    @apply ml-2 -mr-1 h-5 w-5 text-black;
   }
 
+  /* Links */
   .navlink {
-    @apply text-sm font-medium text-gray-900 no-underline;
+    @apply text-sm font-medium text-black no-underline;
   }
 }
