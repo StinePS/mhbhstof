@@ -8,7 +8,7 @@ type Props = {
 
 export default function Header({ menuItems = [] }: Props) {
   return (
-    <nav className="  w-full z-10 p-4 bg-teal-200">
+    <nav className="fixed top-0 z-10 w-full bg-white p-4 drop-shadow-md">
       <NavMobile menuItems={menuItems} />
       <div className="container my-0">
         <NavDesktop menuItems={menuItems} />
