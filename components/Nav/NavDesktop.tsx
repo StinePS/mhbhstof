@@ -17,13 +17,13 @@ export default function NavDesktop({ menuItems }: Props) {
       <div className="hidden flex-row justify-between lg:flex">
         <Link href="/">
           <a>
-            <IconLogo className="h-14" />
+            <IconLogo className="ml-8 h-12 2xl:ml-20" />
           </a>
         </Link>
         <div>
           <input id="search" type="search" placeholder="Søg" />
         </div>
-        <IconCart className="h-8 w-8" />
+        <IconCart className="mr-6 h-8  w-8 2xl:mr-20" />
       </div>
 
       <div className="hidden grid-cols-3 lg:grid">

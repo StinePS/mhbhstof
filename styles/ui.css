@@ -1,7 +1,7 @@
 @layer components {
   /* Buttons */
   .btn {
-    @apply m-2 mx-auto flex max-w-max items-center rounded-xl border-2 border-green bg-green px-4 py-2 text-center text-xl font-semibold text-white no-underline hover:bg-white hover:text-green;
+    @apply mx-auto flex max-w-max items-center rounded-xl border-2 border-green bg-green px-4 py-2 text-center text-xl font-semibold text-white no-underline hover:bg-white hover:text-green;
   }
   /* Chevrons */
   .chevron {
@@ -10,6 +10,6 @@
 
   /* Links */
   .navlink {
-    @apply text-sm font-medium text-black no-underline;
+    @apply text-base font-medium text-black no-underline;
   }
 }

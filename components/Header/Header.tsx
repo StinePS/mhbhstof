@@ -1,4 +1,5 @@
 import { MenuItem } from "../../types/types";
+import Headroom from "react-headroom";
 import NavDesktop from "../Nav/NavDesktop";
 import NavMobile from "../Nav/NavMobile";
 
@@ -8,11 +9,11 @@ type Props = {
 
 export default function Header({ menuItems = [] }: Props) {
   return (
-    <nav className="fixed top-0 z-10 w-full bg-white p-4 drop-shadow-md">
-      <NavMobile menuItems={menuItems} />
-      <div className="container my-0">
+    <Headroom>
+      <nav className="z-10 w-full bg-white p-4 drop-shadow-md">
+        <NavMobile menuItems={menuItems} />
         <NavDesktop menuItems={menuItems} />
-      </div>
-    </nav>
+      </nav>
+    </Headroom>
   );
 }

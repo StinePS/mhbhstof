@@ -11,15 +11,18 @@
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
+    "@googlemaps/react-wrapper": "^1.1.34",
     "@headlessui/react": "^1.6.0",
     "@heroicons/react": "^1.0.6",
     "@mui/material": "^5.8.0",
+    "@types/react-headroom": "^2.2.2",
     "@types/woocommerce__woocommerce-rest-api": "^1.0.2",
     "@woocommerce/woocommerce-rest-api": "^1.0.1",
     "clsx": "^1.1.1",
     "next": "12.1.4",
     "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react-dom": "18.0.0",
+    "react-headroom": "^3.2.0"
   },
   "devDependencies": {
     "@types/node": "17.0.23",
