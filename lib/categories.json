@@ -22,10 +22,24 @@
           {
             "name": "Bh og trusse",
             "url": "/shop/pakker/bh-trusse"
+          }
+        ]
+      },
+      {
+        "name": "Blonder",
+        "url": "/shop/blonder",
+        "items": [
+          {
+            "name": "Alle blonder",
+            "url": "/shop/blonder/"
           },
           {
-            "name": "Trusse",
-            "url": "/shop/pakker/trusse"
+            "name": "Brede blonder",
+            "url": "/shop/blonder/brede-blonder"
+          },
+          {
+            "name": "Smalle blonde",
+            "url": "/shop/blonder/smalle-blonder"
           }
         ]
       },
@@ -56,46 +70,6 @@
           {
             "name": "Simplex",
             "url": "/shop/stof/simplex"
-          },
-          {
-            "name": "Stræksatin",
-            "url": "/shop/stof/simplex"
-          }
-        ]
-      },
-      {
-        "name": "Blonder",
-        "url": "/shop/blonder",
-        "items": [
-          {
-            "name": "Alle blonder",
-            "url": "/shop/blonder/"
-          },
-          {
-            "name": "Brede blonder",
-            "url": "/shop/blonder/brede-blonder"
-          },
-          {
-            "name": "Smalle blonde",
-            "url": "/shop/blonder/smalle-blonder"
-          }
-        ]
-      },
-      {
-        "name": "Elastik",
-        "url": "/shop/elastik",
-        "items": [
-          {
-            "name": "Al elastik",
-            "url": "/shop/elastik/"
-          },
-          {
-            "name": "Foldeelastik",
-            "url": "/shop/elastik/foldeelastik"
-          },
-          {
-            "name": "Taljeelastik",
-            "url": "/shop/elastik/taljeelastik"
           }
         ]
       },
@@ -104,20 +78,12 @@
         "url": "/shop/tilbehor",
         "items": [
           {
-            "name": "Bh-luk",
-            "url": "/shop/tilbehor/bh-luk"
-          },
-          {
-            "name": "Fyldvlies",
-            "url": "/shop/tilbehor/fyldvlies"
+            "name": "Alt tilbehør",
+            "url": "/shop/tilbehor/"
           },
           {
             "name": "Powernet",
             "url": "/shop/tilbehor/powernet"
-          },
-          {
-            "name": "Stropper",
-            "url": "/shop/tilbehor/stropper"
           },
           {
             "name": "Tyl",

@@ -23,7 +23,8 @@
     "components/icons/IconSearch.tsx",
     "components/icons/IconMenu.tsx",
     "components/icons/IconClose.tsx",
-    "components/icons/IconCart.tsx"
+    "components/icons/IconCart.tsx",
+    "pages/api/form.js"
   ],
   "exclude": ["node_modules"]
 }
