@@ -1,14 +1,16 @@
+import Image from "next/image";
 import Link from "next/link";
-import Contact from "../components/Contact/Contact";
 import IconFB from "../components/icons/IconFB";
+import map from "../public/images/map.jpg";
 import { getMenuItems } from "../lib/menuItems";
+import Contact from "../components/Contact/Contact";
 
 export default function About() {
   return (
     <main>
       <div className="container">
         <h1 className="pageheader">Om os</h1>
-        <div className="grid gap-4 lg:grid-cols-2">
+        <section className="grid gap-4 lg:grid-cols-2">
           <div className="rounded-md bg-orange p-4">
             <h2 className="sectionheader">Hvem er vi?</h2>
             <p>
@@ -20,7 +22,7 @@ export default function About() {
               Merete underviser rundt om i Danmark året rundt, og kender på den
               måde mange af sine søde kunder indgående.
             </p>
-            <p>
+            <p className="mb-4">
               På grund af den stigende popularitet er der blevet ansat 2
               hjælpere, som giver en hånd med pakning af ordrer fra webshoppen
               samt ekspedition i butikken.
@@ -28,11 +30,28 @@ export default function About() {
           </div>
           <div className="rounded-md bg-orange p-4">
             <h2 className="sectionheader">Hvor er vi?</h2>
-            <div className="grid grid-cols-2">
-              <address className="not-italic">
-                Kidnakken 11F <br /> 4930 Maribo
-              </address>
-              <p>Her skal være et kort</p>
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <p className="mb-4">Du finder os på adressen</p>
+                <address className="not-italic">
+                  Kidnakken 11F <br /> 4930 Maribo
+                </address>
+                <p className="mt-4">
+                  Vi har ikke faste åbningstider, så kontakt os venligst via
+                  formularen nedenfor forud for dit besøg, hvis du vil undgå at
+                  gå forgæves!
+                </p>
+              </div>
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d575.3662788825904!2d11.480389688200086!3d54.771790598762834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe0d045eaf1f4c187!2zNTTCsDQ2JzE4LjUiTiAxMcKwMjgnNTEuNCJF!5e0!3m2!1sda!2sdk!4v1653983289073!5m2!1sda!2sdk"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
           <div className="rounded-md bg-orange p-4">
@@ -51,7 +70,7 @@ export default function About() {
               formularen nedenfor eller kontakte os via Facebook.
             </p>
             <Link href="https://www.facebook.com/MH-bhstof-og-tilbeh%C3%B8r-170868753394480/">
-              <a className="btn">
+              <a className="btn my-4 lg:mt-8">
                 <IconFB className="h-5 w-5 hover:fill-green" /> Facebook
               </a>
             </Link>
@@ -72,10 +91,10 @@ export default function About() {
               dig!
             </p>
             <Link href="/kurser">
-              <a className="btn">Se kurser</a>
+              <a className="btn my-4 lg:mt-14">Se kurser</a>
             </Link>
           </div>
-        </div>
+        </section>
         <Contact />
       </div>
     </main>

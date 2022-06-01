@@ -11,17 +11,9 @@
   box-sizing: border-box;
 }
 
-/* Padding-top "makes room" for sticky header */
 body {
   overflow-y: scroll;
   background-color: #fbfbfb;
-  padding-top: 80px;
-}
-
-@media (min-width: 768px) {
-  body {
-    padding-top: 112px;
-  }
 }
 
 main {
@@ -30,6 +22,16 @@ main {
 
 p + p {
   margin-top: 1rem;
+}
+
+section + section {
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  section + section {
+    margin-top: 3rem;
+  }
 }
 
 /* FORM */

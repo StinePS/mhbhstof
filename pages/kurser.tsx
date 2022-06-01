@@ -3,11 +3,11 @@ import { getMenuItems } from "../lib/menuItems";
 export default function Courses() {
   return (
     <main>
-      <div className="container">
+      <div className="container pl-8 lg:pl-20">
         <h1 className="pageheader">Kurser</h1>
         <p>Kursusplan over MHs foreløbigt planlagte kurser. </p>
         <p>
-          Bemærk, at tilmelding sker direkte hos udbyderen og ikke her på siden!
+          Bemærk at tilmelding sker direkte hos udbyderen og ikke her på siden!
         </p>
         <h2 className="sectionheader mt-4">Forår 2022</h2>
         <ul className="list-none">
@@ -31,7 +31,7 @@ export default function Courses() {
           <li className="mb-2 mt-8">3.-4. marts - Det Kreative Hus, Skive</li>
           <li className="mb-2">5.-6. marts - Susanne Axelsen, Skødstrup</li>
           <li className="mb-2">
-            8.-9. marts - AOF Roskilde på Gundsømagle Gl. Skole{" "}
+            8.-9. marts - AOF Roskilde på Gundsømagle Gl. Skole
           </li>
           <li className="mb-2">
             12.-13. marts - AOF Roskilde på Gundsømagle Gl. Skole
