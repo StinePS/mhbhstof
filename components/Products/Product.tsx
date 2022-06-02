@@ -1,16 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
+import { WooProduct } from "../../types/woo-types";
 
 type Props = {
-  product: any;
+  product?: WooProduct;
 };
 
 export default function Product({ product }: Props) {
-  if (!product == true) {
+  if (!product) {
     return null;
   }
   return (
-    <Link href={product.permalink} key={product.id}>
+    <Link href={`/shop/${product.slug}`} key={product.id}>
       <a className="no-underline">
         <article>
           <Image
@@ -24,12 +25,6 @@ export default function Product({ product }: Props) {
           </p>
           <h2 className="text-black">{product.name}</h2>
           <p className="text-right text-black">{product.price}kr.</p>
-          {/* Get price including currency
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: product?.price_html ?? "",
-                  }}
-                /> */}
         </article>
       </a>
     </Link>

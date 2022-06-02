@@ -36,7 +36,11 @@ export default function NavMobile({ menuItems }: Props) {
         </Link>
       </div>
       <div>
-        <IconCart className="h-8 w-8" />
+        <Link href="/kurv">
+          <a>
+            <IconCart className="h-8 w-8" />
+          </a>
+        </Link>
       </div>
     </div>
   );

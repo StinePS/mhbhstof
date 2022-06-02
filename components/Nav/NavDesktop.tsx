@@ -23,7 +23,11 @@ export default function NavDesktop({ menuItems }: Props) {
         <div>
           <input id="search" type="search" placeholder="Søg" />
         </div>
-        <IconCart className="mr-6 h-8  w-8 2xl:mr-20" />
+        <Link href="/kurv">
+          <a>
+            <IconCart className="mr-6 h-8  w-8 2xl:mr-20" />
+          </a>
+        </Link>
       </div>
 
       <div className="hidden grid-cols-3 lg:grid">

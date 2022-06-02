@@ -24,7 +24,7 @@ export default function Contact() {
     // Send the data to the server in JSON format.
     const JSONdata = JSON.stringify(data);
 
-    // API endpoint where we send form data.
+    // API  where we send form data.
     const endpoint = "/api/form";
 
     // Form the request for sending data to the server.

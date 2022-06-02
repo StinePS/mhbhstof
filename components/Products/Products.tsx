@@ -1,7 +1,8 @@
+import { WooProduct } from "../../types/woo-types";
 import Product from "./Product";
 
 type Props = {
-  products?: Array<any>;
+  products?: Array<WooProduct>;
 };
 
 export const Products = ({ products }: Props) => {

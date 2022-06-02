@@ -30,7 +30,7 @@ export default function Webshop({ menuItems, products }: Props) {
         <div>
           <ul className="hidden lg:contents">
             {shopItem?.items?.map((category) => (
-              <li key={category.name} className="pl-12 2xl:pl-36">
+              <li key={category.name} className="pl-12 2xl:pl-32">
                 <Accordion
                   expanded={expanded === `${category.name}`}
                   onChange={handleChange(`${category.name}`)}
@@ -64,6 +64,7 @@ export default function Webshop({ menuItems, products }: Props) {
             ))}
           </ul>
         </div>
+        {/* Products from WordPress */}
         <Products products={products} />
         <div></div>
       </div>

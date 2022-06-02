@@ -3,6 +3,10 @@
   .btn {
     @apply mx-auto flex max-w-max items-center rounded-xl border-2 border-green bg-green px-4 py-2 text-center text-xl font-semibold text-white no-underline hover:bg-white hover:text-green;
   }
+
+  .btn-back {
+    @apply mx-auto flex max-w-max items-center border-2 border-black  bg-white px-4 py-2 text-center text-xl font-semibold text-white no-underline hover:scale-110;
+  }
   /* Chevrons */
   .chevron {
     @apply ml-2 -mr-1 h-5 w-5 text-black;
