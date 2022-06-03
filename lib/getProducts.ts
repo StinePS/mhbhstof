@@ -7,6 +7,7 @@ const api = new WooCommerceRestApi({
   version: "wc/v3",
 });
 
+// Fetching product data
 export async function getProducts() {
   try {
     const { data } = await api.get("products", {
@@ -19,6 +20,7 @@ export async function getProducts() {
   }
 }
 
+// Fetching product slug
 export async function getProduct(slug: string) {
   try {
     const { data } = await api.get("products?slug=" + slug);

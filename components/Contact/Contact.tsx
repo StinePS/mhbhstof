@@ -65,11 +65,13 @@ export default function Contact() {
         </div>
       </div>
 
+      {/* If form is already submitted */}
       {submitted ? (
         <div>
           <h2 className="sectionheader">Tak for din besked!</h2>
         </div>
       ) : (
+        /* Otherwise show form */
         <form onSubmit={handleSubmit}>
           <fieldset className="grid gap-4 lg:grid-cols-2">
             <div className="lg:mb-4">
@@ -137,6 +139,8 @@ export default function Contact() {
               Send
             </button>
           </fieldset>
+
+          {/* In case of error */}
           {error ? (
             <div>
               <h2 className="sectionheader mt-4">

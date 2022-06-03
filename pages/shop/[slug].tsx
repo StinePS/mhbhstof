@@ -13,6 +13,7 @@ type Props = {
   product: WooProduct;
 };
 
+// Single product page with details and "Add to basket"
 export default function ProductDetails({ product }: Props) {
   const [addedText, setAddedText] = useState(false);
   const { addProduct } = useCart();

@@ -1,8 +1,6 @@
 export type Breakpoints = "xs" | "sm" | "md" | "lg" | "xl" | "2xl";
 
-/**
- * The screen sizes, based on the Tailwind breakpoints. Ensure these match what we have defined
- */
+/* Screen sizes based on the Tailwind breakpoints */
 export const screens = {
   xs: "0px",
   sm: "640px",
@@ -34,10 +32,8 @@ function sizeToString(value?: Size) {
   return value || "0px";
 }
 
-/**
- * Define the `sizes` for different breakpoints.
- * This takes an object and with the keys, and converts it in to a valid sizes string.
- * */
+/* Define `sizes` for different breakpoints. */
+/* This takes an object with the keys and converts it in to a valid sizes string */
 export function generateSizes(values: SizeValues) {
   const defaultValue = sizeToString(values.xs || "100vw");
 

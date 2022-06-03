@@ -16,6 +16,7 @@ export const CartContext = React.createContext<CartContextType>({
   setCart: () => {},
 });
 
+/* Function for adding items to cart, removing them, and calculating the amount of total items + total price */
 export function useCart() {
   const { cart, setCart } = useContext(CartContext);
 

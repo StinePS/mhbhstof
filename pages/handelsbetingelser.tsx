@@ -1,5 +1,6 @@
 import { getMenuItems } from "../lib/menuItems";
 
+// Lorem ipsum should be replaced with actual conditions
 export default function FAQ() {
   return (
     <main>

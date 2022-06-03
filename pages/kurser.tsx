@@ -1,5 +1,6 @@
 import { getMenuItems } from "../lib/menuItems";
 
+// Hard coded course dates - Next step is getting them dynamically from the database
 export default function Courses() {
   return (
     <main>
@@ -73,7 +74,6 @@ export default function Courses() {
         </ul>
       </div>
     </main>
-    //Oversigt over planlagte kurser (fra FB)
   );
 }
 

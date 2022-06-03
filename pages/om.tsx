@@ -43,6 +43,7 @@ export default function About() {
                 </p>
               </div>
 
+              {/* Google Map of destination */}
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d575.3662788825904!2d11.480389688200086!3d54.771790598762834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe0d045eaf1f4c187!2zNTTCsDQ2JzE4LjUiTiAxMcKwMjgnNTEuNCJF!5e0!3m2!1sda!2sdk!4v1653983289073!5m2!1sda!2sdk"
                 width="100%"
