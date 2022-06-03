@@ -5,6 +5,7 @@ import IconCart from "../icons/IconCart";
 import IconLogo from "../icons/IconLogo";
 import Link from "next/link";
 import { useCart } from "../../hooks/useCart";
+import IconSearch from "../icons/IconSearch";
 
 type Props = {
   menuItems: MenuItem[];
@@ -22,15 +23,31 @@ export default function NavDesktop({ menuItems }: Props) {
             <IconLogo className="ml-8 h-12 2xl:ml-20" />
           </a>
         </Link>
-        <div>
-          <input id="search" type="search" placeholder="Søg" />
+
+        <div className="mr-16">
+          <form action="">
+            <input
+              type="text"
+              placeholder="Søg"
+              name="search"
+              className="rounded-full"
+            />
+            {/* <button
+              className="absolute top-4 h-9 w-9 rounded-full bg-purple text-white"
+              type="submit"
+              aria-label="search"
+            >
+              <IconSearch className="h-7 w-7" />
+            </button> */}
+          </form>
         </div>
+
         <Link href="/kurv">
           <a aria-label="kurv">
-            <IconCart className="mr-6 h-8  w-8 2xl:mr-20" />
+            <IconCart className="mr-6 h-8 w-8 2xl:mr-20" />
             <div
               className={
-                "pointer-events-none absolute top-9 right-7 flex h-6 w-6 justify-center rounded-full bg-grey text-base font-medium"
+                "pointer-events-none absolute flex h-6 w-6 justify-center rounded-full bg-grey text-base font-medium lg:top-9 lg:right-7 2xl:right-20"
               }
             >
               {totalItems}
