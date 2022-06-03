@@ -7,6 +7,7 @@ import { GetStaticPropsContext } from "next";
 import { WooProduct } from "../../types/woo-types";
 import { useEffect, useState } from "react";
 import { useCart } from "../../hooks/useCart";
+import { generateSizes } from "../../styles/screens";
 
 type Props = {
   product: WooProduct;
@@ -47,7 +48,12 @@ export default function ProductDetails({ product }: Props) {
 
           <div className="grid md:grid-cols-2 md:gap-8">
             <div>
-              <Image src={product.images[0].src} width="500" height="500" />
+              <Image
+                src={product.images[0].src}
+                width="500"
+                height="500"
+                sizes={generateSizes({ md: "400px" })}
+              />
             </div>
             <div>
               <div>
