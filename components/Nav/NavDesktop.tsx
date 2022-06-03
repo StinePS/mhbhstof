@@ -4,6 +4,7 @@ import clsx from "clsx";
 import IconCart from "../icons/IconCart";
 import IconLogo from "../icons/IconLogo";
 import Link from "next/link";
+import { useCart } from "../../hooks/useCart";
 
 type Props = {
   menuItems: MenuItem[];
@@ -11,12 +12,13 @@ type Props = {
 
 export default function NavDesktop({ menuItems }: Props) {
   const { pathname } = useRouter();
+  const { totalItems } = useCart();
 
   return (
     <div>
       <div className="hidden flex-row justify-between lg:flex">
         <Link href="/">
-          <a>
+          <a aria-label="menu">
             <IconLogo className="ml-8 h-12 2xl:ml-20" />
           </a>
         </Link>
@@ -24,8 +26,15 @@ export default function NavDesktop({ menuItems }: Props) {
           <input id="search" type="search" placeholder="Søg" />
         </div>
         <Link href="/kurv">
-          <a>
+          <a aria-label="kurv">
             <IconCart className="mr-6 h-8  w-8 2xl:mr-20" />
+            <div
+              className={
+                "pointer-events-none absolute top-9 right-7 flex h-6 w-6 justify-center rounded-full bg-grey text-base font-medium"
+              }
+            >
+              {totalItems}
+            </div>
           </a>
         </Link>
       </div>
