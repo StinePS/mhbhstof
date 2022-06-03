@@ -36,7 +36,7 @@ export type WooProduct = {
   date_on_sale_to_gmt: string | null;
   on_sale: false;
   purchasable: true;
-  total_sales: 0;
+  total_sales: number;
   virtual: false;
   downloadable: false;
   downloads: [];
@@ -58,13 +58,13 @@ export type WooProduct = {
   shipping_required: true;
   shipping_taxable: true;
   shipping_class: "";
-  shipping_class_id: 0;
+  shipping_class_id: number;
   reviews_allowed: true;
   average_rating: "0.00";
-  rating_count: 0;
+  rating_count: number;
   upsell_ids: [];
   cross_sell_ids: [];
-  parent_id: 0;
+  parent_id: number;
   purchase_note: string;
   categories: WooCategory[];
   tags: string[];

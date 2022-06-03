@@ -6,6 +6,7 @@ import Contact from "../components/Contact/Contact";
 import splash from "../public/images/splash.jpg";
 import { MenuItem } from "../types/types";
 import { getMenuItems } from "../lib/menuItems";
+import Gallery from "../components/Gallery/Gallery";
 
 type Props = {
   menuItems: MenuItem[];
@@ -33,7 +34,9 @@ const Home: NextPage<Props> = ({ menuItems }) => {
               </h2>
               <div className="text-center">
                 <Link href="/shop">
-                  <a className="btn mt-8 mb-8 lg:mt-16">Gå til shoppen</a>
+                  <a className="btn mx-auto mt-8 mb-8 lg:mt-16">
+                    Gå til shoppen
+                  </a>
                 </Link>
               </div>
             </div>
@@ -45,7 +48,12 @@ const Home: NextPage<Props> = ({ menuItems }) => {
             <h3 className="font-heebo text-5xl font-bold text-black lg:text-8xl">
               fællesskabet
             </h3>
-            <div>(Galleri med inspirationsbilleder)</div>
+            <div className="text-center">
+              <Link href="https://www.facebook.com/groups/144910305933685">
+                <a className="btn mx-auto mt-4 mb-8">Facebook</a>
+              </Link>
+            </div>
+            <Gallery />
           </section>
           <Contact />
         </div>
@@ -57,8 +65,6 @@ const Home: NextPage<Props> = ({ menuItems }) => {
 export async function getStaticProps() {
   return {
     props: { menuItems: await getMenuItems() },
-    // If a new request comes to the server, then every 1sec. it will check if the data has changed and update the static file inside thex .next folder = all 'SUBSEQUENT' requests have the updates
-    revalidate: 1,
   };
 }
 

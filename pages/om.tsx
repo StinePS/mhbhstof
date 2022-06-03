@@ -70,8 +70,8 @@ export default function About() {
               formularen nedenfor eller kontakte os via Facebook.
             </p>
             <Link href="https://www.facebook.com/MH-bhstof-og-tilbeh%C3%B8r-170868753394480/">
-              <a className="btn my-4 lg:mt-8">
-                <IconFB className="h-5 w-5 hover:fill-green" /> Facebook
+              <a className="btn my-4 mx-auto lg:mt-8">
+                <IconFB className="h-5 w-5" /> Facebook
               </a>
             </Link>
           </div>
@@ -91,7 +91,7 @@ export default function About() {
               dig!
             </p>
             <Link href="/kurser">
-              <a className="btn my-4 lg:mt-14">Se kurser</a>
+              <a className="btn mx-auto my-4 lg:mt-14">Se kurser</a>
             </Link>
           </div>
         </section>

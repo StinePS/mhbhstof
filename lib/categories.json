@@ -9,85 +9,68 @@
     "items": [
       {
         "name": "Pakker",
-        "url": "/shop/pakker",
+        "url": "/shop",
         "items": [
           {
             "name": "Alle pakker",
-            "url": "/shop/pakker/"
+            "url": "/shop"
           },
           {
             "name": "Bh",
-            "url": "/shop/pakker/bh"
+            "url": "/shop"
           },
           {
             "name": "Bh og trusse",
-            "url": "/shop/pakker/bh-trusse"
+            "url": "/shop"
           }
         ]
       },
-      {
-        "name": "Blonder",
-        "url": "/shop/blonder",
-        "items": [
-          {
-            "name": "Alle blonder",
-            "url": "/shop/blonder/"
-          },
-          {
-            "name": "Brede blonder",
-            "url": "/shop/blonder/brede-blonder"
-          },
-          {
-            "name": "Smalle blonde",
-            "url": "/shop/blonder/smalle-blonder"
-          }
-        ]
-      },
+
       {
         "name": "Stof",
         "url": "/shop/stof",
         "items": [
           {
             "name": "Alt stof",
-            "url": "/shop/stof/"
+            "url": "/shop"
           },
           {
             "name": "Blondestof",
-            "url": "/shop/stof/blondestof"
+            "url": "/shop"
           },
           {
             "name": "Jersey",
-            "url": "/shop/stof/jersey"
+            "url": "/shop"
           },
           {
             "name": "Lycra",
-            "url": "/shop/stof/lycra"
+            "url": "/shop"
           },
           {
             "name": "Microfiber",
-            "url": "/shop/stof/microfiber"
+            "url": "/shop"
           },
           {
             "name": "Simplex",
-            "url": "/shop/stof/simplex"
+            "url": "/shop"
           }
         ]
       },
       {
         "name": "Tilbehør",
-        "url": "/shop/tilbehor",
+        "url": "/shop",
         "items": [
           {
             "name": "Alt tilbehør",
-            "url": "/shop/tilbehor/"
+            "url": "/shop"
           },
           {
             "name": "Powernet",
-            "url": "/shop/tilbehor/powernet"
+            "url": "/shop"
           },
           {
             "name": "Tyl",
-            "url": "/shop/tilbehor/tyl"
+            "url": "/shop"
           }
         ]
       }

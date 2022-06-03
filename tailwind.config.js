@@ -8,6 +8,7 @@ module.exports = {
       black: "#0d0d0d",
       darkpurple: "#730255",
       green: "#418200",
+      grey: "#c4c4c4",
       orange: "#F8F0E7",
       purple: "#8c0368",
       white: "#fbfbfb",
@@ -28,7 +29,8 @@ module.exports = {
       inter: ["Inter", "sans-serif"],
       paris: ["Parisienne", "cursive"],
     },
-    extend: {},
+    extend: {
+    },
     screens: {
       sm: "640px",
       // => @media (min-width: 640px) { ... }
@@ -43,7 +45,7 @@ module.exports = {
       // => @media (min-width: 1280px) { ... }
 
       "2xl": "1681px",
-      // => @media (min-width: 1536px) { ... }
+      // => @media (min-width: 1681px) { ... }
     },
   },
   plugins: [],

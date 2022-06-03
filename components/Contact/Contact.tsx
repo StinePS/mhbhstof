@@ -133,7 +133,7 @@ export default function Contact() {
               />
             </div>
 
-            <button className="btn " type="submit">
+            <button className="btn" type="submit">
               Send
             </button>
           </fieldset>
