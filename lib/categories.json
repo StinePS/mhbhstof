@@ -9,26 +9,24 @@
     "items": [
       {
         "name": "Pakker",
-        "url": "/shop",
         "items": [
           {
             "name": "Alle pakker",
-            "url": "/shop"
+            "url": "/shop/alle-pakker"
           },
           {
             "name": "Bh",
-            "url": "/shop"
+            "url": "/shop/bh"
           },
           {
             "name": "Bh og trusse",
-            "url": "/shop"
+            "url": "/shop/bh-og-trusse"
           }
         ]
       },
 
       {
         "name": "Stof",
-        "url": "/shop/stof",
         "items": [
           {
             "name": "Alt stof",
@@ -58,19 +56,18 @@
       },
       {
         "name": "Tilbehør",
-        "url": "/shop",
         "items": [
           {
             "name": "Alt tilbehør",
-            "url": "/shop"
+            "url": "/shop/alt-tilbehor"
           },
           {
             "name": "Powernet",
-            "url": "/shop"
+            "url": "/shop/powernet"
           },
           {
             "name": "Tyl",
-            "url": "/shop"
+            "url": "/shop/tyl"
           }
         ]
       }

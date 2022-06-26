@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { ChevronLeftIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 import { getProduct } from "../../lib/getProducts";
@@ -8,6 +7,7 @@ import { WooProduct } from "../../types/woo-types";
 import { useEffect, useState } from "react";
 import { useCart } from "../../hooks/useCart";
 import { generateSizes } from "../../styles/screens";
+import { useRouter } from "next/router";
 
 type Props = {
   product: WooProduct;
@@ -15,6 +15,7 @@ type Props = {
 
 // Single product page with details and "Add to basket"
 export default function ProductDetails({ product }: Props) {
+  const router = useRouter();
   const [addedText, setAddedText] = useState(false);
   const { addProduct } = useCart();
 
@@ -39,12 +40,15 @@ export default function ProductDetails({ product }: Props) {
       <div className="container">
         <section>
           <div className="my-4">
-            <Link href="/shop">
-              <a className="btn-back">
-                <ChevronLeftIcon className="chevron mr-2" />
-                Tilbage
-              </a>
-            </Link>
+            {/* Next.js' version of window.history.back() = router.back()*/}
+            <button
+              type="button"
+              className="btn-back"
+              onClick={() => router.back()}
+            >
+              <ChevronLeftIcon className="chevron mr-2" />
+              Tilbage
+            </button>
           </div>
 
           <div className="grid md:grid-cols-2 md:gap-8">
@@ -95,7 +99,9 @@ export async function getStaticProps(context: GetStaticPropsContext) {
     return { notFound: true };
   }
   const product = await getProduct(context.params.slug as string);
-
+  if (!product) {
+    return { notFound: true };
+  }
   return {
     props: { menuItems: await getMenuItems(), product },
   };
